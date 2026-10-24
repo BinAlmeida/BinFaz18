@@ -166,7 +166,6 @@ with tab_gallery:
 
 with tab_admin:
     st.subheader("Área da aniversariante")
-    st.warning("Esta área é simples e serve como base inicial. Antes de publicar, mantenha as chaves secretas apenas nos Secrets da hospedagem.")
     admin_input = st.text_input("Código de administração", type="password")
     if admin_input and admin_code and admin_input == admin_code:
         st.success("Acesso administrativo liberado.")
